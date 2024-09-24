@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shotcut icon" type="x-icon" href="resources/tab_icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/tab_icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
@@ -10,26 +10,25 @@
     <script src="https://kit.fontawesome.com/66b479b37b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-    <div class="container"> 
-        <nav>
-            <img src="resources/logo.jpg" class="logo" style="max-width: 200px">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="resources/logo.jpg" class="logo" alt="Logo" style="max-width: 200px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
                 <i class="fas fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Energy Systems Analyst</p>
-            <h1>Hi, I'm Ansari <span>Aadil</span><br>Shahzad from UAE</h1>
+            </nav>
+            <div class="header-text">
+                <p>Energy Systems Analyst</p>
+                <h1>Hi, I'm Ansari <span>Aadil</span><br>Shahzad from UAE</h1>
+            </div>
         </div>
-    </div>
-</div>
+          
 <!-- ---------about--------- -->
 <div id="about">
     <div class="container">
@@ -39,13 +38,12 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>I am a motivated Energy Systems Analyst passionate about sustainability and energy transition. 
-                    Leveraging data analysis and modeling, I tackle pressing energy challenges. 
-                    My skills in statistical analysis, data visualization, and programming (Python, Gurobi) 
-                    empower me to derive actionable insights for real-world solutions. 
-                    Enthusiastic about renewable energy technologies, I am committed to developing innovative 
-                    strategies for a sustainable future. Always open to learning, I look forward to collaborating 
-                    with others in the field to drive impactful change. 
+                <p>I am a motivated Energy Systems Analyst passionate about sustainability and energy transition.
+                    At the R&D Centre, I worked on projects focused on energy resiliency, utilizing data analysis and modeling
+                    to address complex challenges. My skills in statistical analysis, data visualization, and
+                    programming (Python, Gurobi) empowered me to derive actionable insights for real-world solutions.
+                    Enthusiastic about renewable energy technologies, I developed innovative strategies that contributed to our sustainability goals.
+                    Always eager to learn, I look forward to collaborating with others in the field to drive impactful change and advance our collective efforts toward a sustainable future.
                 </p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -165,8 +163,9 @@
         <div class="interests-list">
             <div>
                 <i class="fa-solid fa-chart-column"></i>
-                <h2>Energy Modelling and Data Analysis</h2>
-                <p>Analyze and model energy data to drive actionable insights for optimized performance.</p>
+                <i class="fa-solid fa-dollar"></i>
+                <h2>Energy Modelling, Technoeconomics, and Data Analysis</h2>
+                <p>Utilize energy modeling and technoeconomics to analyze and interpret energy data, generating actionable insights that optimize performance.</p>
             </div>
             <div>
                 <i class="fa-solid fa-gas-pump"></i>
