@@ -28,6 +28,122 @@ body {
     padding: 10px 10%;
     position: relative; /* To position header text correctly */
 }
+  
+  .bubbles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+  }
+
+  .bubble-text strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700; 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .bubble-text span {
+    display: block;
+    font-size: 14px;
+    color: #FFFFFF; 
+    margin-top: 8px;
+    line-height: 1.2;
+  }
+  
+  
+  .circle {
+    width: 220px;
+    height: 220px;
+    background:  #D6B56F;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    animation: float1 10s infinite ease-in-out; /* Apply animation */
+  }
+  
+  
+  .bubble-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    margin-left: 20%;
+    max-width: 60%;
+  }
+  
+  /* Keyframes for floating animations in different directions */
+  @keyframes float1 {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-60px) translateX(40px); /* Move up and to the right */
+    }
+    100% {
+      transform: translateY(-100) translateX(40); /* Return to original position */
+    }
+  }
+  
+  @keyframes float2 {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(150px) translateX(-40px); /* Move down and to the left */
+    }
+    100% {
+      transform: translateY(0) translateX(0); /* Return to original position */
+    }
+  }
+  
+  @keyframes float3 {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-50px) translateX(20px); /* Move up and to the right */
+    }
+    100% {
+      transform: translateY(0) translateX(0); /* Return to original position */
+    }
+  }
+  
+  @keyframes float4 {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(150px) translateX(-60px); /* Move down and to the left */
+    }
+    100% {
+      transform: translateY(0) translateX(0); /* Return to original position */
+    }
+  }
+  
+  /* Assign different animations to each bubble */
+  .circle:nth-child(1) {
+    animation: float1 12s infinite ease-in-out;
+  }
+  
+  .circle:nth-child(2) {
+    animation: float2 12s infinite ease-in-out;
+  }
+  
+  .circle:nth-child(3) {
+    animation: float3 12s infinite ease-in-out;
+  }
+  
+  .circle:nth-child(4) {
+    animation: float4 12s infinite ease-in-out;
+  }
+
+
 
 nav {
     display: flex;
