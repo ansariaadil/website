@@ -38,15 +38,15 @@ body {
   }
 
   .bubble-text strong {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    color: #FFD700; 
+    color: #0c0c0c; 
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
   }
   
   .bubble-text span {
     display: block;
-    font-size: 14px;
+    font-size: 17px;
     color: #FFFFFF; 
     margin-top: 8px;
     line-height: 1.2;
@@ -188,7 +188,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 8%;
     font-size: 30px;
 }
 
