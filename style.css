@@ -238,15 +238,16 @@ nav ul li a:hover::after {
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 60px 0 40px;
 }
 
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: #D6B56F;
 }
 
 .tab-links::after{
