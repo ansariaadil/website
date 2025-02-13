@@ -508,88 +508,105 @@ nav .fas{
     display: none;
 }
 
-
 @media only screen and (max-width: 600px){
-    .header-text{
-        margin-top: 50%;
+    /* Header Section */
+    .header-text {
+        margin-top: 30%;
         font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
     }
-    .header-text h1{
-        font-size: 24px;
+    .header-text h1 {
+        font-size: 22px;
         line-height: 1.4;
     }
-    nav .fas{
+
+    /* Navigation */
+    nav .fas {
         display: block;
-        font-size: 25px;
+        font-size: 28px;
     }
-    nav ul{
+    nav ul {
         background: #D6B56F;
         position: fixed;
         top: 0;
         right: -200px;
         width: 200px;
         height: 100vh;
-        padding-top: 50px;
+        padding-top: 30px;
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li{
-        display: block;
-        margin: 25px;
+    nav ul li a {
+        font-size: 18px;
+        padding: 12px 0;
     }
-    nav ul li a{
-        padding: 10px 0;
-        font-size: 16px;
+
+    /* Bubble Section */
+    .bubbles {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
     .circle {
-        width: 130px;
-        height: 130px;
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        border-radius: 15px;
         animation: none;
     }
     .bubble-text strong {
-        font-size: 12px;
+        font-size: 16px;
     }
     .bubble-text span {
-        font-size: 10px;
+        font-size: 14px;
     }
-    .sub-title{
-        font-size: 36px;
-    }
-    .about-col-1, .about-col-2{
+
+    /* About Section */
+    .about-col-1, .about-col-2 {
         flex-basis: 100%;
         margin-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
     }
     .about-col-1 img {
         width: 80%;
-        display: block;
-        margin: auto;
-    }
-    .about-col-2 {
-        font-size: 14px;
+        border-radius: 10px;
     }
     .tab-links {
         font-size: 14px;
-        margin-right: 15px;
+        margin-right: 10px;
     }
-    .contact-left, .contact-right {
-        flex-basis: 100%;
+    .tab-titles {
+        flex-wrap: wrap;
     }
-    .contact-left p {
+
+    /* Interests */
+    .interests-list div {
+        width: 100%;
+    }
+
+    /* Contact Form */
+    form input, form textarea {
+        padding: 12px;
         font-size: 14px;
     }
     .btn, .btn2 {
-        padding: 12px 24px;
-        font-size: 14px;
+        padding: 14px 32px;
+        font-size: 16px;
     }
-    form input, form textarea {
-        font-size: 14px;
-        padding: 10px;
+
+    /* General Container Padding */
+    .container {
+        padding: 10px 5%;
     }
-    .copyright{
+
+    /* Copyright */
+    .copyright {
         font-size: 12px;
     }
 }
-
 
 #msg{
     color: #61b752;
