@@ -25,15 +25,16 @@
         <div class="container">
             <nav>
                 <img src="resources/logo.jpg" class="logo" alt="Logo" style="max-width: 200px">
-                <ul id="sidemenu">
+            
+                <!-- Desktop Menu -->
+                <ul class="desktop-menu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#interests">Interests</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-                <i class="fas fa-xmark" onclick="closemenu()"></i>
             </nav>
+            
             <div class="container">
                 <div class="bubbles">
                   <!-- Circular bubble 1 -->
@@ -307,14 +308,30 @@
 </script>
 
 <script>
-    var sidemenu = document.getElementById("sidemenu")
+function openmenu() {
+    const sidemenu = document.getElementById('sidemenu');
+    sidemenu.classList.add('active');
+    document.body.classList.add('menu-open');
 
-    function openmenu(){
-        sidemenu.style.right = "0";
+    // Ensure the height is adjusted properly on open
+    sidemenu.style.height = window.innerHeight + 'px';
+}
+
+function closemenu() {
+    const sidemenu = document.getElementById('sidemenu');
+    sidemenu.classList.remove('active');
+    document.body.classList.remove('menu-open');
+}
+
+</script>
+
+<script>
+    window.addEventListener('resize', () => {
+    const sidemenu = document.getElementById('sidemenu');
+    if (sidemenu.classList.contains('active')) {
+        sidemenu.style.height = window.innerHeight + 'px';
     }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
+});
 </script>
 
 <script>
